@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, flash, redirect, url_for, jsonify
-from Scraper import start
+from app.Scraper import start
 
 app = Flask(__name__)
 app.secret_key = 'dopamin'
