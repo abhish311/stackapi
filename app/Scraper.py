@@ -2,20 +2,19 @@
 __author__ = 'Abhishek'
 
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup as bs
 import re
 import sys
 import pandas as pd
+
+
 def start(question):
-    
     new_input = "+".join(question.split())
 
     html = requests.get('https://stackoverflow.com/search?q=' + new_input)
     print "The requested Url is {}".format(html.url)
 
-    
-
-    soup = BeautifulSoup(html.text, "lxml")
+    soup = bs(html.text, "lxml")
     # print soup.prettify()
     child = soup.find_all("div", {"class": "question-summary search-result"})
    
