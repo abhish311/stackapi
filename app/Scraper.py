@@ -37,8 +37,6 @@ def start(question):
 		# print info.columns
 		info.sort_values('votes', inplace=True, ascending=False)
 		# print info
-
-
 		##
 		'''print "Here are are Search Queries related to {} , that might help! ".format(input)
 		print
@@ -90,7 +88,7 @@ def start(question):
 		            print rspnse
 		            continue
 		    else:
-		        print "boom"
+		        #print "boom"
 		        return rspnse#.replace("\n", "                  5                                        ")
 		        '''print "-"*80
 
