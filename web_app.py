@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, flash, redirect, url_for, jsonify
+from flask import Flask, render_template, request, jsonify
 from app.Scraper import start
 
 app = Flask(__name__)
