@@ -38,26 +38,7 @@ def start(question):
 		info.sort_values('votes', inplace=True, ascending=False)
 		# print info
 		##
-		'''print "Here are are Search Queries related to {} , that might help! ".format(input)
-		print
-		print "1. ", info["titles"][0]
-		print "2. ", info["titles"][1]
-		print
-		print "Which Query You want to Search? "
-		print  "-" * 80
-		print "Press:\n'1' to select {0} \n'2' to select {1} ".format(info["titles"][0], info["titles"][1])
-		while (True):
-		    response = int(raw_input("Your Choice: "))
-		    if response == 1:
-		        url_choice = info["url"][0]
-		        break
-		    elif response == 2:
-		        url_choice = info["url"][1]
-		        break
-		    elif response == 0:
-		    	sys.exit()
-		    else:
-		        print "Sorry,  You select a Wrong Key, Try again!"'''
+		
 
 		url_choice = info["url"][0]
 		r_ = requests.get(url_choice)
